@@ -14,6 +14,8 @@ const (
 	CONSUL Backend = "consul"
 	// ETCD backend
 	ETCD Backend = "etcd"
+	// ETCDv3 backend
+	ETCDV3 Backend = "etcdv3"
 	// ZK backend
 	ZK Backend = "zk"
 	// BOLTDB backend

@@ -141,7 +141,7 @@ func testWatch(t *testing.T, kv store.Store) {
 				assert.Equal(t, event.Value, value)
 			} else {
 				assert.Equal(t, event.Key, key)
-				assert.Equal(t, event.Value, newValue)
+				assert.Equal(t, string(event.Value), string(newValue))
 			}
 			eventCount++
 			// We received all the events we wanted to check
